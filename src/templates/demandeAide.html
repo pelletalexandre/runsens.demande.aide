@@ -1,0 +1,21 @@
+<ion-view title="Demande Aide" id="demandeAide">
+    <ion-content padding="true" class="has-header">
+        <form id="demandeAide-form1" class="list" ng-submit="validate()" ng-controller="DemandeAideCtrl" novalidate > <!--novalidate-->
+        
+            <label class="item item-input" id="demandeAide-input1"  >
+                <input type="text" placeholder="Votre nom" ng-model="demande_aide.nom">
+            </label>
+            
+            <label class="item item-input" id="demandeAide-input2" >
+                <input type="text" placeholder="Votre prénom" ng-model="prenom">
+            </label>
+    
+            <label class="item item-input" id="demandeAide-input3" >
+                <input type="tel" placeholder="Votre téléphone" ng-model="demande_aide.telephone">
+            </label>
+            
+            
+        <button id="demandeAide-button1" style="border-radius:10px 10px 10px 10px;" class="button button-positive  button-block" type="submit" >Envoyer</button>
+        </form>
+    </ion-content>
+</ion-view>
